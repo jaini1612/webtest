@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>telicorteX — Where data gains intent</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #0B0F14;
+      --bg-secondary: #111827;
+      --text-primary: #E5E7EB;
+      --text-secondary: #9CA3AF;
+      --accent-primary: #3B82F6;
+      --accent-secondary: #22D3EE;
+      --border-subtle: rgba(255,255,255,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(
+        circle at top,
+        #111827 0%,
+        #0B0F14 60%
+      );
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-secondary);
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 96px 24px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+      padding-bottom: 140px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(
+        90deg,
+        var(--accent-primary),
+        var(--accent-secondary)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p.tagline {
+      margin-top: 16px;
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+    }
+
+    .hero p.subhead {
+      margin-top: 32px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    /* SECTION */
+    section {
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    section h2 {
+      font-size: 2.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    section p {
+      max-width: 820px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    /* ARCHITECTURE */
+    .architecture {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .arch-box {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.01)
+      );
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .arch-box.highlight {
+      border-color: rgba(34,211,238,0.4);
+      box-shadow: 0 0 0 1px rgba(34,211,238,0.15);
+    }
+
+    .arch-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .arch-box.highlight h3 {
+      color: var(--accent-secondary);
+    }
+
+    /* PILLARS */
+    .pillars {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .pillar {
+      border-left: 2px solid var(--accent-primary);
+      padding-left: 16px;
+    }
+
+    .pillar h4 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    /* CONTACT */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-secondary);
+    }
+
+    .contact {
+      text-align: center;
+      padding: 80px 24px;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--accent-secondary);
+    }
+
+    /* SMALL DETAILS */
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      color: var(--accent-primary);
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="container hero">
+    <h1>teli<span>corteX</span></h1>
+    <p class="tagline">Where data gains intent.</p>
+    <p class="subhead">
+      telicorteX builds a context intelligence layer that sits between your
+      data infrastructure and AI applications — ensuring trust, meaning,
+      and control before data ever powers decisions.
+    </p>
+  </div>
+
+  <!-- PROBLEM -->
+  <section>
+    <div class="container">
+      <div class="eyebrow">The problem</div>
+      <h2>AI is only as reliable as the data beneath it</h2>
+      <p>
+        Modern organizations have no shortage of data — but context,
+        semantics, and trust often get lost between raw infrastructure and
+        AI-driven analytics. Fragmented sources, inconsistent definitions,
+        and limited control lead to AI systems making confident decisions on
+        unreliable foundations.
+      </p>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section>
+    <div class="container">
+      <div class="eyebrow">Our approach</div>
+      <h2>A context intelligence layer for AI-ready data</h2>
+      <p>
+        telicorteX introduces a reliability layer that harmonizes,
+        contextualizes, and governs data without interfering with existing
+        ingestion pipelines. Using agentic solutions, we reason over data,
+        resolve inconsistencies, and preserve business meaning before it
+        reaches AI and machine learning systems.
+      </p>
+
+      <div class="architecture">
+        <div class="arch-box">
+          <h3>Data & Infra Layer</h3>
+          <p>Warehouses, lakes, operational systems, and existing pipelines.</p>
+        </div>
+
+        <div class="arch-box highlight">
+          <h3>telicorteX Context Layer</h3>
+          <p>
+            Consolidation, harmonization, semantic understanding, governance,
+            and agentic reasoning over data.
+          </p>
+        </div>
+
+        <div class="arch-box">
+          <h3>AI & Analytics Layer</h3>
+          <p>ML models, LLMs, analytics tools, and AI-powered applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section>
+    <div class="container">
+      <div class="eyebrow">Why it matters</div>
+      <h2>From data to decisions — without losing meaning</h2>
+      <p>
+        By inserting intelligence, context, and control at the right layer,
+        telicorteX enables faster AI adoption, lower risk, and outcomes that
+        align with real business intent — not just statistical patterns.
+      </p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <h4>Trust</h4>
+          <p>Reliable data foundations for confident AI decisions.</p>
+        </div>
+        <div class="pillar">
+          <h4>Meaning</h4>
+          <p>Preserve business semantics across systems and teams.</p>
+        </div>
+        <div class="pillar">
+          <h4>Context</h4>
+          <p>AI that understands why data exists, not just what it is.</p>
+        </div>
+        <div class="pillar">
+          <h4>Control</h4>
+          <p>Governance, lineage, and intent built into the AI data path.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer>
+    <div class="contact">
+      <h2>Get in touch</h2>
+      <p>Let’s talk about building reliable foundations for AI.</p>
+      <a href="mailto:puneet@telicortex.com">puneet@telicortex.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
